@@ -23,15 +23,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.getenv('SECRET_KEY')
-# SECRET_KEY = 'django-insecure-dm@sf!_c_&n^eq7ck7$5x54)01^^b5b^^q6^ap&8zne@6r-pb5'
+#SECRET_KEY = 'django-insecure-dm@sf!_c_&n^eq7ck7$5x54)01^^b5b^^q6^ap&8zne@6r-pb5'
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-# SESSION_COOKIE_SECURE = True
-# CSRF_COOKIE_SECURE = True
+DEBUG = False
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
 
 ALLOWED_HOSTS = [
     '127.0.0.1',
-    'site2024.pythonanywhere.com',
+    'site2025.pythonanywhere.com',
 
 ]
 
@@ -90,10 +90,10 @@ WSGI_APPLICATION = 'prodject_seminar_hw.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': '<site2024$default>',
-        'USER': '<site2024>',
+        'NAME': '<site2025$default>',
+        'USER': '<site2025>',
         'PASSWORD': os.getenv('MYSQL_PASSWORD'),
-        'HOST': '<site2024.mysql.pythonanywhere-services.com>',
+        'HOST': '<site2025.mysql.pythonanywhere-services.com>',
         'OPTIONS': {
         'init_command': "SET NAMES 'utf8mb4';SET sql_mode='STRICT_TRANS_TABLES'",
         'charset': 'utf8mb4',
